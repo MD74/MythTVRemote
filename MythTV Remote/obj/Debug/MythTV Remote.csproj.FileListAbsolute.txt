@@ -1,0 +1,16 @@
+C:\Users\minidisk\Documents\Visual Studio 2013\Projects\MythTV Remote\MythTV Remote\bin\Debug\MythTV Remote.exe.config
+C:\Users\minidisk\Documents\Visual Studio 2013\Projects\MythTV Remote\MythTV Remote\bin\Debug\MythTV Remote.exe.manifest
+C:\Users\minidisk\Documents\Visual Studio 2013\Projects\MythTV Remote\MythTV Remote\bin\Debug\MythTV Remote.application
+C:\Users\minidisk\Documents\Visual Studio 2013\Projects\MythTV Remote\MythTV Remote\bin\Debug\MythTV Remote.exe
+C:\Users\minidisk\Documents\Visual Studio 2013\Projects\MythTV Remote\MythTV Remote\bin\Debug\MythTV Remote.pdb
+C:\Users\minidisk\Documents\Visual Studio 2013\Projects\MythTV Remote\MythTV Remote\obj\Debug\MythTV_Remote.MythMain.resources
+C:\Users\minidisk\Documents\Visual Studio 2013\Projects\MythTV Remote\MythTV Remote\obj\Debug\MythTV_Remote.About.resources
+C:\Users\minidisk\Documents\Visual Studio 2013\Projects\MythTV Remote\MythTV Remote\obj\Debug\MythTV_Remote.Properties.Resources.resources
+C:\Users\minidisk\Documents\Visual Studio 2013\Projects\MythTV Remote\MythTV Remote\obj\Debug\MythTV_Remote.SetFrontend.resources
+C:\Users\minidisk\Documents\Visual Studio 2013\Projects\MythTV Remote\MythTV Remote\obj\Debug\MythTV Remote.csproj.GenerateResource.Cache
+C:\Users\minidisk\Documents\Visual Studio 2013\Projects\MythTV Remote\MythTV Remote\obj\Debug\MythTV Remote.TrustInfo.xml
+C:\Users\minidisk\Documents\Visual Studio 2013\Projects\MythTV Remote\MythTV Remote\obj\Debug\MythTV Remote.exe.manifest
+C:\Users\minidisk\Documents\Visual Studio 2013\Projects\MythTV Remote\MythTV Remote\obj\Debug\MythTV Remote.application
+C:\Users\minidisk\Documents\Visual Studio 2013\Projects\MythTV Remote\MythTV Remote\obj\Debug\MythTV Remote.exe
+C:\Users\minidisk\Documents\Visual Studio 2013\Projects\MythTV Remote\MythTV Remote\obj\Debug\MythTV Remote.pdb
+C:\Users\minidisk\Documents\Visual Studio 2013\Projects\MythTV Remote\MythTV Remote\obj\Debug\MythTV Remote.csprojResolveAssemblyReference.cache
