@@ -17,16 +17,18 @@ namespace MythTV_Remote
     public partial class MythMain : Form
     {
         //Retrieve Frontend IP and Port
-        string server = (string)Registry.GetValue(@"HKEY_CURRENT_USER\SOFTWARE\MythRemote", "server", null);
-        string serverport = (string)Registry.GetValue(@"HKEY_CURRENT_USER\SOFTWARE\MythRemote", "serverport", null);
+        //string server = (string)Registry.GetValue(@"HKEY_CURRENT_USER\SOFTWARE\MythRemote", "01_serverName", null);
+        //string serverIP = (string)Registry.GetValue(@"HKEY_CURRENT_USER\SOFTWARE\MythRemote", "01_serverIP", null);
+        //string serverport = (string)Registry.GetValue(@"HKEY_CURRENT_USER\SOFTWARE\MythRemote", "01_serverport", null);
+        
         string straction;
-
+       
         
 
         public MythMain()
         {
             InitializeComponent();
-            
+            InitializeComboBox();
         }
 
         protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
@@ -127,15 +129,22 @@ namespace MythTV_Remote
         }
 
 
-        private void submiturl(string server, string serverport, string straction )
+        private void submiturl(string straction )
         {
             try
             {
+                
                 toolStripStatusLabel1.Text = "";
-                server = (string)Registry.GetValue(@"HKEY_CURRENT_USER\SOFTWARE\MythRemote", "server", null);
-                serverport = (string)Registry.GetValue(@"HKEY_CURRENT_USER\SOFTWARE\MythRemote", "serverport", null);
+                int intfrontend = cboxFrontend.SelectedIndex;
+                intfrontend = intfrontend + 1;
+                string strFrontend = intfrontend.ToString();
 
-                WebRequest request = WebRequest.Create("http://" + server + ":" + serverport + "/Frontend/SendAction?Action=" + straction);
+                string server = (string)Registry.GetValue(@"HKEY_CURRENT_USER\SOFTWARE\MythRemote", "0" + strFrontend + "_serverName", null);
+                string serverIP = (string)Registry.GetValue(@"HKEY_CURRENT_USER\SOFTWARE\MythRemote", "0" + strFrontend + "_serverIP", null);
+                string serverport = (string)Registry.GetValue(@"HKEY_CURRENT_USER\SOFTWARE\MythRemote", "0" + strFrontend + "_serverport", null);
+                //MessageBox.Show("http://" + serverIP + ":" + serverport + "/Frontend/SendAction?Action=" + straction);
+
+                WebRequest request = WebRequest.Create("http://" + serverIP + ":" + serverport + "/Frontend/SendAction?Action=" + straction);
                 WebResponse response = request.GetResponse();
                 Stream dataStream = response.GetResponseStream();
                 toolStripStatusLabel1.Text = (((HttpWebResponse)response).StatusDescription);
@@ -152,193 +161,193 @@ namespace MythTV_Remote
         private void btnSelect_Click(object sender, EventArgs e)
         {
             straction = "SELECT";
-            submiturl(server, serverport, straction);
+            submiturl(straction);
         }
 
         private void btnRight_Click(object sender, EventArgs e)
         {
             straction = "RIGHT";
-            submiturl(server, serverport, straction); 
+            submiturl(straction); 
         }
 
         private void btnUp_Click(object sender, EventArgs e)
         {
             straction = "UP";
-            submiturl(server, serverport, straction);
+            submiturl(straction);
         }
 
         private void btnLeft_Click(object sender, EventArgs e)
         {
             straction = "LEFT";
-            submiturl(server, serverport, straction);
+            submiturl(straction);
         }
 
         private void btnDown_Click(object sender, EventArgs e)
         {
             straction = "DOWN";
-            submiturl(server, serverport, straction);
+            submiturl(straction);
         }
 
         private void btnGuide_Click(object sender, EventArgs e)
         {
             straction = "Program Guide";
-            submiturl(server, serverport, straction);
+            submiturl(straction);
         }
 
         private void btnInfo_Click(object sender, EventArgs e)
         {
             straction = "INFO";
-            submiturl(server, serverport, straction);
+            submiturl(straction);
         }
 
         private void btnPrevious_Click(object sender, EventArgs e)
         {
             straction = "ESCAPE";
-            submiturl(server, serverport, straction);            
+            submiturl(straction);            
         }
 
         private void btnMenu_Click(object sender, EventArgs e)
         {
             straction = "MENU";
-            submiturl(server, serverport, straction);
+            submiturl(straction);
         }
 
         private void btnPageUp_Click(object sender, EventArgs e)
         {
             straction = "PAGEUP";
-            submiturl(server, serverport, straction);
+            submiturl(straction);
         }
 
         private void btnPageDown_Click(object sender, EventArgs e)
         {
             straction = "PAGEDOWN";
-            submiturl(server, serverport, straction);
+            submiturl(straction);
         }
 
         private void btnChannelUp_Click(object sender, EventArgs e)
         {
             straction = "CHANNELUP";
-            submiturl(server, serverport, straction);
+            submiturl(straction);
         }
 
         private void btnChannelDown_Click(object sender, EventArgs e)
         {
             straction = "CHANNELDOWN";
-            submiturl(server, serverport, straction);
+            submiturl(straction);
         }
 
         private void btnNum1_Click(object sender, EventArgs e)
         {
             straction = "1";
-            submiturl(server, serverport, straction);
+            submiturl(straction);
         }
 
         private void btnNum2_Click(object sender, EventArgs e)
         {
             straction = "2";
-            submiturl(server, serverport, straction);
+            submiturl(straction);
         }
 
         private void btnNum3_Click(object sender, EventArgs e)
         {
             straction = "3";
-            submiturl(server, serverport, straction);
+            submiturl(straction);
         }
 
         private void btnNum4_Click(object sender, EventArgs e)
         {
             straction = "4";
-            submiturl(server, serverport, straction);
+            submiturl(straction);
         }
 
         private void btnNum5_Click(object sender, EventArgs e)
         {
             straction = "5";
-            submiturl(server, serverport, straction);
+            submiturl(straction);
         }
 
         private void btnNum6_Click(object sender, EventArgs e)
         {
             straction = "6";
-            submiturl(server, serverport, straction);
+            submiturl(straction);
         }
 
         private void btnNum7_Click(object sender, EventArgs e)
         {
             straction = "7";
-            submiturl(server, serverport, straction);
+            submiturl(straction);
         }
 
         private void btnNum8_Click(object sender, EventArgs e)
         {
             straction = "8";
-            submiturl(server, serverport, straction);
+            submiturl(straction);
         }
 
         private void btnNum9_Click(object sender, EventArgs e)
         {
             straction = "9";
-            submiturl(server, serverport, straction);
+            submiturl(straction);
         }
 
         private void btnNum0_Click(object sender, EventArgs e)
         {
             straction = "0";
-            submiturl(server, serverport, straction);
+            submiturl(straction);
         }
 
         private void btnVolumeUp_Click(object sender, EventArgs e)
         {
             straction = "VOLUMEUP";
-            submiturl(server, serverport, straction);
+            submiturl(straction);
         }
 
         private void btnVolumeDown_Click(object sender, EventArgs e)
         {
             straction = "VOLUMEDOWN";
-            submiturl(server, serverport, straction);
+            submiturl(straction);
         }
 
         private void btnRewind_Click(object sender, EventArgs e)
         {
             straction = "SEEKRWND";
-            submiturl(server, serverport, straction);
+            submiturl(straction);
         }
 
         private void btnPlay_Click(object sender, EventArgs e)
         {
             straction = "PLAY";
-            submiturl(server, serverport, straction);
+            submiturl(straction);
         }
 
         private void btnPause_Click(object sender, EventArgs e)
         {
             straction = "PAUSE";
-            submiturl(server, serverport, straction);
+            submiturl(straction);
         }
 
         private void btnForward_Click(object sender, EventArgs e)
         {
             straction = "SEEKFFWD";
-            submiturl(server, serverport, straction);
+            submiturl(straction);
         }
 
         private void btnBigJumpRew_Click(object sender, EventArgs e)
         {
             straction = "CHANNELUP";
-            submiturl(server, serverport, straction);
+            submiturl(straction);
         }
 
         private void btnToggleRecord_Click(object sender, EventArgs e)
         {
             straction = "TOGGLERECORD";
-            submiturl(server, serverport, straction);
+            submiturl(straction);
         }
 
         private void btnBigJumpFwd_Click(object sender, EventArgs e)
         {
             straction = "CHANNELDOWN";
-            submiturl(server, serverport, straction);
+            submiturl(straction);
         }
 
         private void statusStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
@@ -350,6 +359,7 @@ namespace MythTV_Remote
         {
             SetFrontend frm2 = new SetFrontend();
             frm2.Show();
+           
         }
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
@@ -362,6 +372,103 @@ namespace MythTV_Remote
         {
             About frm3 = new About();
             frm3.Show();
+        }
+
+        private void cboxFrontend_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
+        }
+        private void cboxFrontend_DropDown(object sender, System.EventArgs e)
+        {
+            cboxFrontend.Items.Clear();
+
+            InitializeComboBox();
+        }
+
+
+        private void InitializeComboBox()
+        {
+            string strserver01 = (string)Registry.GetValue(@"HKEY_CURRENT_USER\SOFTWARE\MythRemote", "01_serverName", null);
+            string strserver02 = (string)Registry.GetValue(@"HKEY_CURRENT_USER\SOFTWARE\MythRemote", "02_serverName", null);
+            string strserver03 = (string)Registry.GetValue(@"HKEY_CURRENT_USER\SOFTWARE\MythRemote", "03_serverName", null);
+            string strserver04 = (string)Registry.GetValue(@"HKEY_CURRENT_USER\SOFTWARE\MythRemote", "04_serverName", null);
+            string strserver05 = (string)Registry.GetValue(@"HKEY_CURRENT_USER\SOFTWARE\MythRemote", "05_serverName", null);
+            string strserver06 = (string)Registry.GetValue(@"HKEY_CURRENT_USER\SOFTWARE\MythRemote", "06_serverName", null);
+            string strserver07 = (string)Registry.GetValue(@"HKEY_CURRENT_USER\SOFTWARE\MythRemote", "07_serverName", null);
+            string strserver08 = (string)Registry.GetValue(@"HKEY_CURRENT_USER\SOFTWARE\MythRemote", "08_serverName", null);
+            string strserver09 = (string)Registry.GetValue(@"HKEY_CURRENT_USER\SOFTWARE\MythRemote", "09_serverName", null);
+            string strserver10 = (string)Registry.GetValue(@"HKEY_CURRENT_USER\SOFTWARE\MythRemote", "10_serverName", null);
+            string strserver11 = (string)Registry.GetValue(@"HKEY_CURRENT_USER\SOFTWARE\MythRemote", "11_serverName", null);
+            string strserver12 = (string)Registry.GetValue(@"HKEY_CURRENT_USER\SOFTWARE\MythRemote", "12_serverName", null);
+            string strserver13 = (string)Registry.GetValue(@"HKEY_CURRENT_USER\SOFTWARE\MythRemote", "13_serverName", null);
+            string strserver14 = (string)Registry.GetValue(@"HKEY_CURRENT_USER\SOFTWARE\MythRemote", "14_serverName", null);
+            string strserver15 = (string)Registry.GetValue(@"HKEY_CURRENT_USER\SOFTWARE\MythRemote", "15_serverName", null);
+
+
+
+            if (strserver01 != "")
+            {
+                cboxFrontend.Items.Add((string)Registry.GetValue(@"HKEY_CURRENT_USER\SOFTWARE\MythRemote", "01_serverName", null));
+            }
+            if (strserver02 != "")
+            {
+                cboxFrontend.Items.Add((string)Registry.GetValue(@"HKEY_CURRENT_USER\SOFTWARE\MythRemote", "02_serverName", null));
+            }
+            if (strserver03 != "")
+            {
+                cboxFrontend.Items.Add((string)Registry.GetValue(@"HKEY_CURRENT_USER\SOFTWARE\MythRemote", "03_serverName", null));
+            }
+            if (strserver04 != "")
+            {
+                cboxFrontend.Items.Add((string)Registry.GetValue(@"HKEY_CURRENT_USER\SOFTWARE\MythRemote", "04_serverName", null));
+            }
+            if (strserver05 != "")
+            {
+                cboxFrontend.Items.Add((string)Registry.GetValue(@"HKEY_CURRENT_USER\SOFTWARE\MythRemote", "05_serverName", null));
+            }
+            if (strserver06 != "")
+            {
+                cboxFrontend.Items.Add((string)Registry.GetValue(@"HKEY_CURRENT_USER\SOFTWARE\MythRemote", "06_serverName", null));
+            }
+            if (strserver07 != "")
+            {
+                cboxFrontend.Items.Add((string)Registry.GetValue(@"HKEY_CURRENT_USER\SOFTWARE\MythRemote", "07_serverName", null));
+            }
+            if (strserver08 != "")
+            {
+                cboxFrontend.Items.Add((string)Registry.GetValue(@"HKEY_CURRENT_USER\SOFTWARE\MythRemote", "08_serverName", null));
+            }
+            if (strserver09 != "")
+            {
+                cboxFrontend.Items.Add((string)Registry.GetValue(@"HKEY_CURRENT_USER\SOFTWARE\MythRemote", "09_serverName", null));
+            }
+            if (strserver10 != "")
+            {
+                cboxFrontend.Items.Add((string)Registry.GetValue(@"HKEY_CURRENT_USER\SOFTWARE\MythRemote", "10_serverName", null));
+            }
+            if (strserver11 != "")
+            {
+                cboxFrontend.Items.Add((string)Registry.GetValue(@"HKEY_CURRENT_USER\SOFTWARE\MythRemote", "11_serverName", null));
+            }
+            if (strserver12 != "")
+            {
+                cboxFrontend.Items.Add((string)Registry.GetValue(@"HKEY_CURRENT_USER\SOFTWARE\MythRemote", "12_serverName", null));
+            }
+            if (strserver13 != "")
+            {
+                cboxFrontend.Items.Add((string)Registry.GetValue(@"HKEY_CURRENT_USER\SOFTWARE\MythRemote", "13_serverName", null));
+            }
+            if (strserver14 != "")
+            {
+                cboxFrontend.Items.Add((string)Registry.GetValue(@"HKEY_CURRENT_USER\SOFTWARE\MythRemote", "14_serverName", null));
+            }
+            if (strserver15 != "")
+            {
+                cboxFrontend.Items.Add((string)Registry.GetValue(@"HKEY_CURRENT_USER\SOFTWARE\MythRemote", "15_serverName", null));
+            }
+
+            cboxFrontend.SelectedIndex = 0;
+         
         }
     }
 }

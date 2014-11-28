@@ -21,9 +21,10 @@ namespace MythTV_Remote
             Application.SetCompatibleTextRenderingDefault(false);
 
             //Retrieve Frontend IP and Port
-            string serverchk = (string)Registry.GetValue(@"HKEY_CURRENT_USER\SOFTWARE\MythRemote", "server", null);
-            string serverportchk = (string)Registry.GetValue(@"HKEY_CURRENT_USER\SOFTWARE\MythRemote", "serverport", null);
-            if (serverchk == null | serverportchk == null)
+            string serverchk = (string)Registry.GetValue(@"HKEY_CURRENT_USER\SOFTWARE\MythRemote", "01_serverName", null);
+            string serverIPchk = (string)Registry.GetValue(@"HKEY_CURRENT_USER\SOFTWARE\MythRemote", "01_serverIP", null);
+            string serverportchk = (string)Registry.GetValue(@"HKEY_CURRENT_USER\SOFTWARE\MythRemote", "01_serverport", null);
+            if (serverchk == null | serverportchk == null | serverIPchk == null)
             {
                 Application.Run(new SetFrontend());
             }

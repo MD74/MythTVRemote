@@ -71,6 +71,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.btnPause = new System.Windows.Forms.Button();
+            this.cboxFrontend = new System.Windows.Forms.ComboBox();
             this.statusStrip1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -81,7 +82,7 @@
             this.btnSelect.FlatAppearance.BorderSize = 0;
             this.btnSelect.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSelect.Image = ((System.Drawing.Image)(resources.GetObject("btnSelect.Image")));
-            this.btnSelect.Location = new System.Drawing.Point(80, 64);
+            this.btnSelect.Location = new System.Drawing.Point(80, 105);
             this.btnSelect.Name = "btnSelect";
             this.btnSelect.Size = new System.Drawing.Size(37, 31);
             this.btnSelect.TabIndex = 0;
@@ -96,7 +97,7 @@
             this.btnUp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUp.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUp.Image = ((System.Drawing.Image)(resources.GetObject("btnUp.Image")));
-            this.btnUp.Location = new System.Drawing.Point(80, 27);
+            this.btnUp.Location = new System.Drawing.Point(80, 68);
             this.btnUp.Name = "btnUp";
             this.btnUp.Size = new System.Drawing.Size(37, 31);
             this.btnUp.TabIndex = 1;
@@ -110,7 +111,7 @@
             this.btnLeft.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLeft.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLeft.Image = ((System.Drawing.Image)(resources.GetObject("btnLeft.Image")));
-            this.btnLeft.Location = new System.Drawing.Point(37, 64);
+            this.btnLeft.Location = new System.Drawing.Point(37, 105);
             this.btnLeft.Name = "btnLeft";
             this.btnLeft.Size = new System.Drawing.Size(37, 31);
             this.btnLeft.TabIndex = 2;
@@ -124,7 +125,7 @@
             this.btnRight.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRight.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRight.Image = ((System.Drawing.Image)(resources.GetObject("btnRight.Image")));
-            this.btnRight.Location = new System.Drawing.Point(123, 64);
+            this.btnRight.Location = new System.Drawing.Point(123, 105);
             this.btnRight.Name = "btnRight";
             this.btnRight.Size = new System.Drawing.Size(37, 31);
             this.btnRight.TabIndex = 3;
@@ -138,7 +139,7 @@
             this.btnDown.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDown.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDown.Image = ((System.Drawing.Image)(resources.GetObject("btnDown.Image")));
-            this.btnDown.Location = new System.Drawing.Point(80, 101);
+            this.btnDown.Location = new System.Drawing.Point(80, 142);
             this.btnDown.Name = "btnDown";
             this.btnDown.Size = new System.Drawing.Size(37, 31);
             this.btnDown.TabIndex = 4;
@@ -148,7 +149,7 @@
             // 
             // btnGuide
             // 
-            this.btnGuide.Location = new System.Drawing.Point(22, 171);
+            this.btnGuide.Location = new System.Drawing.Point(22, 212);
             this.btnGuide.Name = "btnGuide";
             this.btnGuide.Size = new System.Drawing.Size(52, 23);
             this.btnGuide.TabIndex = 5;
@@ -160,7 +161,7 @@
             // btnBack
             // 
             this.btnBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBack.Location = new System.Drawing.Point(123, 142);
+            this.btnBack.Location = new System.Drawing.Point(123, 183);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(52, 23);
             this.btnBack.TabIndex = 6;
@@ -171,7 +172,7 @@
             // 
             // btnInfo
             // 
-            this.btnInfo.Location = new System.Drawing.Point(123, 171);
+            this.btnInfo.Location = new System.Drawing.Point(123, 212);
             this.btnInfo.Name = "btnInfo";
             this.btnInfo.Size = new System.Drawing.Size(52, 23);
             this.btnInfo.TabIndex = 7;
@@ -182,7 +183,7 @@
             // 
             // btnMenu
             // 
-            this.btnMenu.Location = new System.Drawing.Point(22, 142);
+            this.btnMenu.Location = new System.Drawing.Point(22, 183);
             this.btnMenu.Name = "btnMenu";
             this.btnMenu.Size = new System.Drawing.Size(52, 23);
             this.btnMenu.TabIndex = 8;
@@ -193,7 +194,7 @@
             // 
             // btnPageDown
             // 
-            this.btnPageDown.Location = new System.Drawing.Point(123, 200);
+            this.btnPageDown.Location = new System.Drawing.Point(123, 241);
             this.btnPageDown.Name = "btnPageDown";
             this.btnPageDown.Size = new System.Drawing.Size(52, 23);
             this.btnPageDown.TabIndex = 9;
@@ -204,7 +205,7 @@
             // 
             // btnPageUp
             // 
-            this.btnPageUp.Location = new System.Drawing.Point(22, 200);
+            this.btnPageUp.Location = new System.Drawing.Point(22, 241);
             this.btnPageUp.Name = "btnPageUp";
             this.btnPageUp.Size = new System.Drawing.Size(52, 23);
             this.btnPageUp.TabIndex = 10;
@@ -215,7 +216,7 @@
             // 
             // btnNum1
             // 
-            this.btnNum1.Location = new System.Drawing.Point(22, 408);
+            this.btnNum1.Location = new System.Drawing.Point(22, 449);
             this.btnNum1.Name = "btnNum1";
             this.btnNum1.Size = new System.Drawing.Size(37, 23);
             this.btnNum1.TabIndex = 11;
@@ -226,7 +227,7 @@
             // 
             // btnNum2
             // 
-            this.btnNum2.Location = new System.Drawing.Point(80, 408);
+            this.btnNum2.Location = new System.Drawing.Point(80, 449);
             this.btnNum2.Name = "btnNum2";
             this.btnNum2.Size = new System.Drawing.Size(37, 23);
             this.btnNum2.TabIndex = 12;
@@ -237,7 +238,7 @@
             // 
             // btnNum3
             // 
-            this.btnNum3.Location = new System.Drawing.Point(138, 408);
+            this.btnNum3.Location = new System.Drawing.Point(138, 449);
             this.btnNum3.Name = "btnNum3";
             this.btnNum3.Size = new System.Drawing.Size(37, 23);
             this.btnNum3.TabIndex = 13;
@@ -248,7 +249,7 @@
             // 
             // btnNum4
             // 
-            this.btnNum4.Location = new System.Drawing.Point(22, 437);
+            this.btnNum4.Location = new System.Drawing.Point(22, 478);
             this.btnNum4.Name = "btnNum4";
             this.btnNum4.Size = new System.Drawing.Size(37, 23);
             this.btnNum4.TabIndex = 14;
@@ -259,7 +260,7 @@
             // 
             // btnNum5
             // 
-            this.btnNum5.Location = new System.Drawing.Point(80, 437);
+            this.btnNum5.Location = new System.Drawing.Point(80, 478);
             this.btnNum5.Name = "btnNum5";
             this.btnNum5.Size = new System.Drawing.Size(37, 23);
             this.btnNum5.TabIndex = 15;
@@ -270,7 +271,7 @@
             // 
             // btnNum6
             // 
-            this.btnNum6.Location = new System.Drawing.Point(138, 437);
+            this.btnNum6.Location = new System.Drawing.Point(138, 478);
             this.btnNum6.Name = "btnNum6";
             this.btnNum6.Size = new System.Drawing.Size(37, 23);
             this.btnNum6.TabIndex = 16;
@@ -281,7 +282,7 @@
             // 
             // btnNum7
             // 
-            this.btnNum7.Location = new System.Drawing.Point(22, 466);
+            this.btnNum7.Location = new System.Drawing.Point(22, 507);
             this.btnNum7.Name = "btnNum7";
             this.btnNum7.Size = new System.Drawing.Size(37, 23);
             this.btnNum7.TabIndex = 17;
@@ -292,7 +293,7 @@
             // 
             // btnNum8
             // 
-            this.btnNum8.Location = new System.Drawing.Point(80, 466);
+            this.btnNum8.Location = new System.Drawing.Point(80, 507);
             this.btnNum8.Name = "btnNum8";
             this.btnNum8.Size = new System.Drawing.Size(37, 23);
             this.btnNum8.TabIndex = 18;
@@ -303,7 +304,7 @@
             // 
             // btnNum9
             // 
-            this.btnNum9.Location = new System.Drawing.Point(138, 466);
+            this.btnNum9.Location = new System.Drawing.Point(138, 507);
             this.btnNum9.Name = "btnNum9";
             this.btnNum9.Size = new System.Drawing.Size(37, 23);
             this.btnNum9.TabIndex = 19;
@@ -315,7 +316,7 @@
             // btnChannelUp
             // 
             this.btnChannelUp.Image = ((System.Drawing.Image)(resources.GetObject("btnChannelUp.Image")));
-            this.btnChannelUp.Location = new System.Drawing.Point(123, 239);
+            this.btnChannelUp.Location = new System.Drawing.Point(123, 280);
             this.btnChannelUp.Name = "btnChannelUp";
             this.btnChannelUp.Size = new System.Drawing.Size(52, 23);
             this.btnChannelUp.TabIndex = 23;
@@ -325,7 +326,7 @@
             // 
             // btnNum0
             // 
-            this.btnNum0.Location = new System.Drawing.Point(80, 495);
+            this.btnNum0.Location = new System.Drawing.Point(80, 536);
             this.btnNum0.Name = "btnNum0";
             this.btnNum0.Size = new System.Drawing.Size(37, 23);
             this.btnNum0.TabIndex = 24;
@@ -338,7 +339,7 @@
             // 
             this.btnChannelDown.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnChannelDown.Image = ((System.Drawing.Image)(resources.GetObject("btnChannelDown.Image")));
-            this.btnChannelDown.Location = new System.Drawing.Point(123, 281);
+            this.btnChannelDown.Location = new System.Drawing.Point(123, 322);
             this.btnChannelDown.Name = "btnChannelDown";
             this.btnChannelDown.Size = new System.Drawing.Size(52, 23);
             this.btnChannelDown.TabIndex = 25;
@@ -350,7 +351,7 @@
             // 
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel1});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 520);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 578);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Size = new System.Drawing.Size(199, 22);
             this.statusStrip1.TabIndex = 26;
@@ -386,26 +387,26 @@
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(147, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(157, 6);
             // 
             // setFrontendIPToolStripMenuItem
             // 
             this.setFrontendIPToolStripMenuItem.Name = "setFrontendIPToolStripMenuItem";
-            this.setFrontendIPToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
-            this.setFrontendIPToolStripMenuItem.Text = "Set &Frontend IP";
+            this.setFrontendIPToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
+            this.setFrontendIPToolStripMenuItem.Text = "Set &Frontend Info";
             this.setFrontendIPToolStripMenuItem.Click += new System.EventHandler(this.setFrontendIPToolStripMenuItem_Click);
             // 
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
             this.aboutToolStripMenuItem.Text = "A&bout";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
             this.exitToolStripMenuItem.Text = "E&xit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -413,7 +414,7 @@
             // 
             this.btnVolumeUp.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVolumeUp.Image = ((System.Drawing.Image)(resources.GetObject("btnVolumeUp.Image")));
-            this.btnVolumeUp.Location = new System.Drawing.Point(22, 239);
+            this.btnVolumeUp.Location = new System.Drawing.Point(22, 280);
             this.btnVolumeUp.Name = "btnVolumeUp";
             this.btnVolumeUp.Size = new System.Drawing.Size(52, 23);
             this.btnVolumeUp.TabIndex = 28;
@@ -425,7 +426,7 @@
             // 
             this.btnVolumeDown.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVolumeDown.Image = ((System.Drawing.Image)(resources.GetObject("btnVolumeDown.Image")));
-            this.btnVolumeDown.Location = new System.Drawing.Point(22, 281);
+            this.btnVolumeDown.Location = new System.Drawing.Point(22, 322);
             this.btnVolumeDown.Name = "btnVolumeDown";
             this.btnVolumeDown.Size = new System.Drawing.Size(52, 23);
             this.btnVolumeDown.TabIndex = 29;
@@ -439,7 +440,7 @@
             this.btnRewind.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRewind.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRewind.Image = ((System.Drawing.Image)(resources.GetObject("btnRewind.Image")));
-            this.btnRewind.Location = new System.Drawing.Point(22, 330);
+            this.btnRewind.Location = new System.Drawing.Point(22, 371);
             this.btnRewind.Name = "btnRewind";
             this.btnRewind.Size = new System.Drawing.Size(35, 30);
             this.btnRewind.TabIndex = 30;
@@ -453,7 +454,7 @@
             this.btnPlay.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPlay.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPlay.Image = ((System.Drawing.Image)(resources.GetObject("btnPlay.Image")));
-            this.btnPlay.Location = new System.Drawing.Point(63, 330);
+            this.btnPlay.Location = new System.Drawing.Point(63, 371);
             this.btnPlay.Name = "btnPlay";
             this.btnPlay.Size = new System.Drawing.Size(30, 30);
             this.btnPlay.TabIndex = 31;
@@ -467,7 +468,7 @@
             this.btnForward.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnForward.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnForward.Image = ((System.Drawing.Image)(resources.GetObject("btnForward.Image")));
-            this.btnForward.Location = new System.Drawing.Point(138, 330);
+            this.btnForward.Location = new System.Drawing.Point(138, 371);
             this.btnForward.Name = "btnForward";
             this.btnForward.Size = new System.Drawing.Size(35, 30);
             this.btnForward.TabIndex = 32;
@@ -481,7 +482,7 @@
             this.btnBigJumpRew.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBigJumpRew.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBigJumpRew.Image = ((System.Drawing.Image)(resources.GetObject("btnBigJumpRew.Image")));
-            this.btnBigJumpRew.Location = new System.Drawing.Point(22, 366);
+            this.btnBigJumpRew.Location = new System.Drawing.Point(22, 407);
             this.btnBigJumpRew.Name = "btnBigJumpRew";
             this.btnBigJumpRew.Size = new System.Drawing.Size(37, 30);
             this.btnBigJumpRew.TabIndex = 33;
@@ -495,7 +496,7 @@
             this.btnToggleRecord.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnToggleRecord.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnToggleRecord.Image = ((System.Drawing.Image)(resources.GetObject("btnToggleRecord.Image")));
-            this.btnToggleRecord.Location = new System.Drawing.Point(80, 366);
+            this.btnToggleRecord.Location = new System.Drawing.Point(80, 407);
             this.btnToggleRecord.Name = "btnToggleRecord";
             this.btnToggleRecord.Size = new System.Drawing.Size(37, 30);
             this.btnToggleRecord.TabIndex = 34;
@@ -509,7 +510,7 @@
             this.btnBigJumpFwd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBigJumpFwd.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBigJumpFwd.Image = ((System.Drawing.Image)(resources.GetObject("btnBigJumpFwd.Image")));
-            this.btnBigJumpFwd.Location = new System.Drawing.Point(138, 366);
+            this.btnBigJumpFwd.Location = new System.Drawing.Point(138, 407);
             this.btnBigJumpFwd.Name = "btnBigJumpFwd";
             this.btnBigJumpFwd.Size = new System.Drawing.Size(37, 30);
             this.btnBigJumpFwd.TabIndex = 35;
@@ -520,7 +521,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(26, 265);
+            this.label1.Location = new System.Drawing.Point(26, 306);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(42, 13);
             this.label1.TabIndex = 36;
@@ -529,7 +530,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(127, 265);
+            this.label2.Location = new System.Drawing.Point(127, 306);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(46, 13);
             this.label2.TabIndex = 37;
@@ -541,7 +542,7 @@
             this.btnPause.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPause.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPause.Image = ((System.Drawing.Image)(resources.GetObject("btnPause.Image")));
-            this.btnPause.Location = new System.Drawing.Point(98, 330);
+            this.btnPause.Location = new System.Drawing.Point(98, 371);
             this.btnPause.Name = "btnPause";
             this.btnPause.Size = new System.Drawing.Size(30, 30);
             this.btnPause.TabIndex = 38;
@@ -549,11 +550,24 @@
             this.btnPause.UseVisualStyleBackColor = true;
             this.btnPause.Click += new System.EventHandler(this.btnPause_Click);
             // 
+            // cboxFrontend
+            // 
+            this.cboxFrontend.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboxFrontend.FormattingEnabled = true;
+            this.cboxFrontend.Location = new System.Drawing.Point(22, 39);
+            this.cboxFrontend.Name = "cboxFrontend";
+            this.cboxFrontend.Size = new System.Drawing.Size(153, 21);
+            this.cboxFrontend.TabIndex = 39;
+            this.cboxFrontend.SelectedIndexChanged += new System.EventHandler(this.cboxFrontend_SelectedIndexChanged);
+            this.cboxFrontend.DropDown += new System.EventHandler(this.cboxFrontend_DropDown);
+
+            // 
             // MythMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(199, 542);
+            this.ClientSize = new System.Drawing.Size(199, 600);
+            this.Controls.Add(this.cboxFrontend);
             this.Controls.Add(this.btnPause);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -607,7 +621,9 @@
 
         }
 
+        
         #endregion
+        
 
         private System.Windows.Forms.Button btnSelect;
         private System.Windows.Forms.Button btnUp;
@@ -651,6 +667,9 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnPause;
+        private System.Windows.Forms.ComboBox cboxFrontend;
+
+
     }
 }
 
